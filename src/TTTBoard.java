@@ -1,10 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Board model holding 3x3 cells.
- * Cells contain 'X', 'O', or ' '.
- */
 public class TTTBoard {
     private final char[][] cells = new char[3][3];
 
@@ -32,7 +28,6 @@ public class TTTBoard {
         return true;
     }
 
-    /** Return list of empty cell coords as int[2] pairs. */
     public List<int[]> emptyCells() {
         List<int[]> list = new ArrayList<>();
         for (int r = 0; r < 3; r++)
